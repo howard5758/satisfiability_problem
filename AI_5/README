@@ -1,0 +1,57 @@
+# Author: Ping-Jung Liu
+# Date: October 25th 2017
+# COSC 76 Assignment 4: Sudoku and Propositional Logic
+# Acknowledgement: Professor Devin Balkom for providing structures and suggestions 
+
+###README###
+
+Files in this directory:
+
+- Sudoku_SAT.pdf
+
+- Sudoku_SAT.md
+
+- SAT.py
+
+- solve_sudoku.py
+
+- display.py
+
+- numerous .cnf logics
+
+- numerous .sol solutions to corresponding .cnf logics
+
+#######################################################
+To test sudoku
+#######################################################
+- Open solve_sudoku.py
+
+- Change line10 puzzle_name to str("the puzzle you wish to solve")
+
+- Change line13 sat to SAT("the puzzle you wish to solve.cnf")
+
+- Change line15 to gsat to test gsat; default is walksat
+
+- Please note that it takes a while to solve the harder ones
+
+- Note for graders: I intentionally made the program print out the total
+  number of clause satisfied each iteration.
+
+- Gsat could solve the first few puzzle, and walksat could solve all, including puzzle_bonus
+
+- All the solutions are included in the folder.
+
+########################################################
+To test N-queens
+########################################################
+- Open queen_cnf.py
+
+- Go to line 75, the main function
+
+- Change q to the number of queens you wish to solve; the board would be q * q
+
+- Run the program, and it should be able to solve up to 20 queens. (I have not tried more)
+
+- Note q should be greater than 3. (no solution then, obviously)
+
+
